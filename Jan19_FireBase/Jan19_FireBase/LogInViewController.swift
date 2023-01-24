@@ -15,7 +15,7 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        errorLB.alpha = 0
         // Do any additional setup after loading the view.
     }
 
@@ -42,5 +42,10 @@ class LogInViewController: UIViewController {
         let homeViewController = storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
         view?.window?.rootViewController = homeViewController
         view?.window?.makeKeyAndVisible()
+    }
+    
+    func setTextField() {
+        Utilities.styleTextField(emailTF)
+        Utilities.styleTextField(passwordTF)
     }
 }

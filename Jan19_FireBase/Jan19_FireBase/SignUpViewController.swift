@@ -8,6 +8,8 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseStorage
+
 enum Gender:String {
     case op1 = "Male"
     case op2 = "Female"
@@ -37,6 +39,7 @@ class SignUpViewController: UIViewController {
         setGenderPopupBtn()
         setDepartmentPopupBtn()
         setTextField()
+        errorLB.alpha = 0
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
@@ -49,15 +52,11 @@ class SignUpViewController: UIViewController {
                     self.showError("Error Creating User")
                 } else {
                     let db = Firestore.firestore()
-//                    print(self.firstNameTF.text)
-//                    print(self.lastNameTF.text)
-//                    print(self.genderPopupBtn.titleLabel?.text)
-//                    print(self.departmentPopupBtn.titleLabel?.text)
                     
-                    db.collection("Users").addDocument(data: ["first name":self.firstNameTF.text ?? "N/A",
-                                                              "last name":self.lastNameTF.text ?? "N/A",
-                                                              "gender":self.genderPopupBtn.titleLabel?.text ?? "N/A",
-                                                              "department":self.departmentPopupBtn.titleLabel?.text ?? "N/A"
+                    db.collection("Users").addDocument(data: ["first name":self.firstNameTF.text ?? "None",
+                                                              "last name":self.lastNameTF.text ?? "None",
+                                                              "gender":self.genderPopupBtn.titleLabel?.text ?? "None",
+                                                              "department":self.departmentPopupBtn.titleLabel?.text ?? "None"
                                                              ]) { error in
                         
                         if error != nil {
@@ -113,7 +112,7 @@ class SignUpViewController: UIViewController {
             lastNameTF.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             emailTF.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             phoneNoTF.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            return " Please fill all fields"
+            return " Please fill all fields."
         }
         return nil
     }
@@ -128,4 +127,5 @@ class SignUpViewController: UIViewController {
         view?.window?.rootViewController = homeViewController
         view?.window?.makeKeyAndVisible()
     }
+    
 }

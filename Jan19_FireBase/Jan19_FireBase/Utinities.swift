@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 class Utilities {
     static func styleTextField(_ textfield: UITextField) {
         let bottomLayer = CALayer()
@@ -21,4 +22,5 @@ class Utilities {
         
         return passwordTest.evaluate(with: password)
     }
+
 }
