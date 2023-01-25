@@ -6,12 +6,30 @@
 //
 
 import UIKit
-
+import FirebaseFirestore
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var userTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
+    
+    func fetchAllUsers() {
+    }
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+
+    }
+
+
 }
