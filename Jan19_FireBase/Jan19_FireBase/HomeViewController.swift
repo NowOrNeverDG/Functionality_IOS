@@ -13,11 +13,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
-    func fetchAllUsers() {
+    func createTableHeader() -> UIView {
+        guard let email = UserDefaults.standard.val
     }
 }
 
@@ -28,8 +27,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
-
     }
+    
+    
 
 
 }

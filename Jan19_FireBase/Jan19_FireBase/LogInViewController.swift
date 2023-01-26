@@ -28,6 +28,7 @@ class LogInViewController: UIViewController {
             if error != nil {
                 self.showError(error!.localizedDescription)
             }else {
+                UserDefaults.standard.set(email, forKey: "email")
                 self.transitionToHome()
             }
         }

@@ -54,7 +54,7 @@ class SignUpViewController: UIViewController {
         
         if error != nil {
             showError(error!)
-        }else {
+        } else {
             DatabaseManager.shared.userExists(with: emailStr) { [weak self] existed in
                 guard let strongSelf = self else { return }
                 guard !existed else {
@@ -63,17 +63,29 @@ class SignUpViewController: UIViewController {
                 }
                 
                 Auth.auth().createUser(withEmail: emailStr, password: phoneNoStr) { result, error in
-                    guard error != nil else {
-                        strongSelf.showError("Error: creating Account error")
+                    guard error == nil else {
+                        strongSelf.showError("Error: \(error.debugDescription)")
                         return
                     }
-                    
-                    DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firsNameStr, lastName: lastNamestr, email: emailStr, phoneNumber: phoneNoStr, gender: genderStr, department: departmentStr))
+                    let chatUser = ChatAppUser(firstName: firsNameStr, lastName: lastNamestr, email: emailStr, phoneNumber: phoneNoStr, gender: genderStr, department: departmentStr)
+                    DatabaseManager.shared.insertUser(with: chatUser) { success in
+                        guard let image = strongSelf.profileImgview.image, let data = image.pngData() else {
+                            return
+                        }
+                        let fileName = chatUser.profilePictureFileName
+                        StorageManager.shared.uploadProfilePicture(with: data, fileName: fileName) { result in
+                            switch result {
+                            case .success(let downloadUrl):
+                                UserDefaults.standard .set(downloadUrl, forKey: "profile_picture_url")
+                                print(downloadUrl)
+                            case .failure(let error):
+                                print(error)
+                            }
+                        }
+                    }
                     strongSelf.transitionToHome()
                 }
             }
-            
-            
         }
     }
     

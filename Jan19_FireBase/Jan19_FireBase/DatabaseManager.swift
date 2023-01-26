@@ -26,14 +26,21 @@ final class DatabaseManager {
         }
     }
     
-    public func insertUser(with user: ChatAppUser) {
+    public func insertUser(with user: ChatAppUser, completion: @escaping (Bool)->Void) {
         database.child(user.safeEmail).setValue([
             "firstName":user.firstName,
             "lastName":user.lastName,
             "phoneNumber":user.phoneNumber,
             "gender":user.gender,
             "department":user.department
-        ])
+        ]) { error, _ in
+            guard error == nil else {
+                print("Failed to write to database")
+                completion(false)
+                return
+            }
+            completion(true)
+        }
     }
 }
 
@@ -49,5 +56,7 @@ struct ChatAppUser {
         safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
         return safeEmail
     }
-//    var profilePictureUrl: String
+    var profilePictureFileName: String {
+        return "\(safeEmail)_profile_name.png"
+    }
 }

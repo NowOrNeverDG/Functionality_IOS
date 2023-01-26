@@ -18,6 +18,7 @@
 		350959EB2980C93C00AF55F8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 350959EA2980C93C00AF55F8 /* FirebaseFirestore */; };
 		350959ED2980C93C00AF55F8 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 350959EC2980C93C00AF55F8 /* FirebaseMessaging */; };
 		350959EF2980C93C00AF55F8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 350959EE2980C93C00AF55F8 /* FirebaseStorage */; };
+		350959F12980FA3800AF55F8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350959F02980FA3800AF55F8 /* StorageManager.swift */; };
 		35A7BEEB2979207D000017CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7BEEA2979207D000017CE /* AppDelegate.swift */; };
 		35A7BEED2979207D000017CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7BEEC2979207D000017CE /* SceneDelegate.swift */; };
 		35A7BEEF2979207D000017CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7BEEE2979207D000017CE /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		350959DD29804ABB00AF55F8 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		350959DF2980C89700AF55F8 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		350959F02980FA3800AF55F8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		35A7BEE72979207D000017CE /* Jan19_FireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jan19_FireBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A7BEEA2979207D000017CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A7BEEC2979207D000017CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				35A7BEEE2979207D000017CE /* ViewController.swift */,
 				35AB9D652979DD1700EE8B67 /* LogInViewController.swift */,
 				350959DF2980C89700AF55F8 /* DatabaseManager.swift */,
+				350959F02980FA3800AF55F8 /* StorageManager.swift */,
 				35AB9D672979DD2500EE8B67 /* SignUpViewController.swift */,
 				35AB9D78297A5B9D00EE8B67 /* HomeViewController.swift */,
 				35AB9D692979F3E000EE8B67 /* Utinities.swift */,
@@ -321,6 +324,7 @@
 				350959DE29804ABB00AF55F8 /* UserTableViewCell.swift in Sources */,
 				35A7BEED2979207D000017CE /* SceneDelegate.swift in Sources */,
 				35AB9D79297A5B9D00EE8B67 /* HomeViewController.swift in Sources */,
+				350959F12980FA3800AF55F8 /* StorageManager.swift in Sources */,
 				35AB9D682979DD2500EE8B67 /* SignUpViewController.swift in Sources */,
 				350959E02980C89700AF55F8 /* DatabaseManager.swift in Sources */,
 			);
@@ -515,7 +519,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.GeDingInPerson.Jan19-FireBase";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GeDingInPerson.Jan19;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -546,7 +550,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.GeDingInPerson.Jan19-FireBase";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GeDingInPerson.Jan19;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
