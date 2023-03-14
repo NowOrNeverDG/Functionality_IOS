@@ -203,7 +203,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="77" id="rgZ-Te-263">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="77" id="rgZ-Te-263" customClass="UserTableViewCell" customModule="Jan19_FireBase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rgZ-Te-263" id="cLz-Bg-evC">
@@ -233,6 +233,10 @@
                                                 <constraint firstItem="9sb-57-KOD" firstAttribute="leading" secondItem="cLz-Bg-evC" secondAttribute="leading" constant="8" id="zIG-Sr-fac"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userIdLb" destination="RzU-YU-1bA" id="vLa-Wu-keq"/>
+                                            <outlet property="userImgview" destination="9sb-57-KOD" id="EII-md-L3L"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

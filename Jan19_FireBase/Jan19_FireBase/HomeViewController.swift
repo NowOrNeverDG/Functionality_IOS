@@ -15,8 +15,14 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    func createTableHeader() -> UIView {
-        guard let email = UserDefaults.standard.val
+    func downloadImage(imageView: UIImageView, url:URL) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            DispatchQueue.main.async {
+                let image = UIImage(data: data)
+                imageView.image = image
+            }
+        }.resume()
     }
 }
 
@@ -26,7 +32,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        var cell = self.userTableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as? UserTableViewCell
+        let safeEmail = DatabaseManager.safeEmail(email: email)
+        let filename = safeEmail + "_profile_name.png"
+        let path = "images/" + filename
+        
+        StorageManager.shared.downloadUrl(for: path) { result in
+            switch result {
+            case .failure(let error):
+                print("Failure to download url: \(error)")
+            case .success(let url):
+                self.downloadImage(imageView: cell?.userImgview!, url: url)
+            }
+        }
     }
     
     

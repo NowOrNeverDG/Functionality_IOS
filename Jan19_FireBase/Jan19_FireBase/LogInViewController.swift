@@ -24,7 +24,7 @@ class LogInViewController: UIViewController {
             showError("Please fill all field")
             return
         }
-        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+        Auth.auth().signIn(withEmail: DatabaseManager.safeEmail(email: email), password: password) { result, error in
             if error != nil {
                 self.showError(error!.localizedDescription)
             }else {

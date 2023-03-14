@@ -76,7 +76,7 @@ class SignUpViewController: UIViewController {
                         StorageManager.shared.uploadProfilePicture(with: data, fileName: fileName) { result in
                             switch result {
                             case .success(let downloadUrl):
-                                UserDefaults.standard .set(downloadUrl, forKey: "profile_picture_url")
+                                UserDefaults.standard.set(downloadUrl, forKey: "profile_picture_url")
                                 print(downloadUrl)
                             case .failure(let error):
                                 print(error)

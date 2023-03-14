@@ -13,12 +13,16 @@ final class DatabaseManager {
     
     private let database = Database.database().reference()
 
-    
-    public func userExists(with email: String, completion: @escaping ((Bool) -> Void)) {
+    static func safeEmail(email:String) -> String {
         var safeEmail = email.replacingOccurrences(of: ".", with: "-")
         safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
+        return safeEmail
+    }
+    
+    public func userExists(with email: String, completion: @escaping ((Bool) -> Void)) {
         
-        database.child(safeEmail).observeSingleEvent(of: .value) { snapchat in
+        
+        database.child(DatabaseManager.safeEmail(email: email)).observeSingleEvent(of: .value) { snapchat in
             guard let _ = snapchat.value as? String else {
                 completion(false)
                 return }
@@ -52,9 +56,7 @@ struct ChatAppUser {
     var gender: String
     var department: String
     var safeEmail: String {
-        var safeEmail = email.replacingOccurrences(of: ".", with: "-")
-        safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
-        return safeEmail
+        return DatabaseManager.safeEmail(email: email)
     }
     var profilePictureFileName: String {
         return "\(safeEmail)_profile_name.png"
