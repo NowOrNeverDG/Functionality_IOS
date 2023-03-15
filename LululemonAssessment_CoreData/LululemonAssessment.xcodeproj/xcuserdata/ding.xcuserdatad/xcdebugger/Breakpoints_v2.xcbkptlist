@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "95B633E8-EBF3-4B32-9D5E-225E81306536"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F2B941E-C9C5-4D1A-BD69-735B1818E583"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LululemonAssessment/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "segmentChanged(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9F2B941E-C9C5-4D1A-BD69-735B1818E583 - 93719e86a77891da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LululemonAssessment.ViewController.segmentChanged(__C.UISegmentedControl) -&gt; ()"
+                  moduleName = "LululemonAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ding/XcodeProject/LululemonAssessment%202%202%202/LululemonAssessment/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "151">
+               </Location>
+               <Location
+                  uuid = "9F2B941E-C9C5-4D1A-BD69-735B1818E583 - e12ddb232e6f7663"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in LululemonAssessment.ViewController.segmentChanged(__C.UISegmentedControl) -&gt; ()"
+                  moduleName = "LululemonAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ding/XcodeProject/LululemonAssessment%202%202%202/LululemonAssessment/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED168D5E-253F-43D5-9DFD-9C10BAA57568"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LululemonAssessment/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "segmentChanged(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
