@@ -2,12 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Subsciption &amp; Cancallables/Subsciption &amp; Cancallables.xcodeproj">
+      location = "group:/Users/ding/XcodeProject/Functionality/[Swift]Combine_Functional_Programming/Subsciption &amp; Cancallables/Subscription &amp; Cancallables.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Combining&amp;Subscription.playground">
+      location = "group:Subsciption &amp; Cancallables/Subsciption &amp; Cancallables/../../Combining&amp;Subscription.playground">
    </FileRef>
    <FileRef
-      location = "group:AssigningSubscriptions.playground">
+      location = "group:Assigning Subscriptions/Assigning Subscriptions.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CurrentValueSubject/CurrentValueSubject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PassThroughSubject/PassThroughSubject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Multithreading/Multithreading.xcodeproj">
    </FileRef>
 </Workspace>
