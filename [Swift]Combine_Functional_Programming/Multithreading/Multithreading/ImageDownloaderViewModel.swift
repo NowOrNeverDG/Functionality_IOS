@@ -27,9 +27,13 @@ final class ImageDownloaderViewModel {
                         print("Setting placeHolder on the main thread: \(Thread.isMainThread)")
                     }
             })
+            .map({UIImage(data: $0.data)})
+            .receive(on: DispatchQueue.main)
             .sink { (res) in
                 print("Finished subscription on the main thread: \(Thread.isMainThread)")
-            } receiveValue: { (res) in
+            } receiveValue: { [weak self] (val) in
+                self?.image.send(val)
+                self?.image.send(completion: .finished)
                 print("Received subscription on the main thread: \(Thread.isMainThread)")
             }
             .store(in: &subscriptions)

@@ -19,4 +19,16 @@
    <FileRef
       location = "group:Multithreading/Multithreading.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Memory Management.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Publishers in SwfitUI/Publishers in SwfitUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AnyPublisher, Just&amp;Never.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Future &amp; Deffered/Future &amp; Deffered.xcodeproj">
+   </FileRef>
 </Workspace>
