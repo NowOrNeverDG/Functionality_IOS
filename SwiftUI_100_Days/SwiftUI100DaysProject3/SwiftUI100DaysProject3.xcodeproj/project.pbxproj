@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351679D02A37EA1E008E999D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351679CF2A37EA1E008E999D /* AddView.swift */; };
+		351679D22A38202B008E999D /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351679D12A38202B008E999D /* Expenses.swift */; };
+		351679D42A38205F008E999D /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351679D32A38205F008E999D /* ExpenseItem.swift */; };
 		35D9B17E2A301BD700ECBB37 /* SwiftUI100DaysProject3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B17D2A301BD700ECBB37 /* SwiftUI100DaysProject3App.swift */; };
 		35D9B1802A301BD700ECBB37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B17F2A301BD700ECBB37 /* ContentView.swift */; };
 		35D9B1822A301BDA00ECBB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D9B1812A301BDA00ECBB37 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		351679CF2A37EA1E008E999D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		351679D12A38202B008E999D /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		351679D32A38205F008E999D /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 		35D9B17A2A301BD700ECBB37 /* SwiftUI100DaysProject3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI100DaysProject3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D9B17D2A301BD700ECBB37 /* SwiftUI100DaysProject3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI100DaysProject3App.swift; sourceTree = "<group>"; };
 		35D9B17F2A301BD700ECBB37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 			children = (
 				35D9B17D2A301BD700ECBB37 /* SwiftUI100DaysProject3App.swift */,
 				35D9B17F2A301BD700ECBB37 /* ContentView.swift */,
+				351679CF2A37EA1E008E999D /* AddView.swift */,
+				351679D12A38202B008E999D /* Expenses.swift */,
+				351679D32A38205F008E999D /* ExpenseItem.swift */,
 				35D9B1812A301BDA00ECBB37 /* Assets.xcassets */,
 				35D9B1832A301BDA00ECBB37 /* Preview Content */,
 			);
@@ -257,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351679D22A38202B008E999D /* Expenses.swift in Sources */,
+				351679D02A37EA1E008E999D /* AddView.swift in Sources */,
+				351679D42A38205F008E999D /* ExpenseItem.swift in Sources */,
 				35D9B1802A301BD700ECBB37 /* ContentView.swift in Sources */,
 				35D9B17E2A301BD700ECBB37 /* SwiftUI100DaysProject3App.swift in Sources */,
 			);

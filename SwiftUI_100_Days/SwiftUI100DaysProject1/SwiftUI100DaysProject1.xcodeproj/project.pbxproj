@@ -14,11 +14,12 @@
 		35D9B14A2A2EBC5500ECBB37 /* SwiftUI100DaysProject1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1492A2EBC5500ECBB37 /* SwiftUI100DaysProject1Tests.swift */; };
 		35D9B1542A2EBC5500ECBB37 /* SwiftUI100DaysProject1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1532A2EBC5500ECBB37 /* SwiftUI100DaysProject1UITests.swift */; };
 		35D9B1562A2EBC5500ECBB37 /* SwiftUI100DaysProject1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1552A2EBC5500ECBB37 /* SwiftUI100DaysProject1UITestsLaunchTests.swift */; };
-		35D9B1662A2EBE8F00ECBB37 /* LengthConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1652A2EBE8F00ECBB37 /* LengthConvertorView.swift */; };
-		35D9B1682A2EBE9C00ECBB37 /* LengthConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1672A2EBE9C00ECBB37 /* LengthConvertor.swift */; };
 		35D9B16A2A2EBEA600ECBB37 /* TipsCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1692A2EBEA600ECBB37 /* TipsCalculatorView.swift */; };
 		35D9B16C2A2EBEAC00ECBB37 /* TempertureConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B16B2A2EBEAC00ECBB37 /* TempertureConvertor.swift */; };
 		35D9B16E2A2EBEB100ECBB37 /* TempConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B16D2A2EBEB100ECBB37 /* TempConverterView.swift */; };
+		35D9B1A82A3148A900ECBB37 /* LengthConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1A72A3148A900ECBB37 /* LengthConvertor.swift */; };
+		35D9B1AA2A3148B100ECBB37 /* LengthConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1A92A3148B100ECBB37 /* LengthConvertorView.swift */; };
+		35D9B1AC2A31550F00ECBB37 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B1AB2A31550F00ECBB37 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +50,12 @@
 		35D9B14F2A2EBC5500ECBB37 /* SwiftUI100DaysProject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI100DaysProject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D9B1532A2EBC5500ECBB37 /* SwiftUI100DaysProject1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI100DaysProject1UITests.swift; sourceTree = "<group>"; };
 		35D9B1552A2EBC5500ECBB37 /* SwiftUI100DaysProject1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI100DaysProject1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		35D9B1652A2EBE8F00ECBB37 /* LengthConvertorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LengthConvertorView.swift; path = ../../../SwiftUI100DaysProject/LengthConvertor/LengthConvertorView.swift; sourceTree = "<group>"; };
-		35D9B1672A2EBE9C00ECBB37 /* LengthConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LengthConvertor.swift; path = ../../../SwiftUI100DaysProject/LengthConvertor/LengthConvertor.swift; sourceTree = "<group>"; };
 		35D9B1692A2EBEA600ECBB37 /* TipsCalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsCalculatorView.swift; sourceTree = "<group>"; };
 		35D9B16B2A2EBEAC00ECBB37 /* TempertureConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempertureConvertor.swift; sourceTree = "<group>"; };
 		35D9B16D2A2EBEB100ECBB37 /* TempConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempConverterView.swift; sourceTree = "<group>"; };
+		35D9B1A72A3148A900ECBB37 /* LengthConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthConvertor.swift; sourceTree = "<group>"; };
+		35D9B1A92A3148B100ECBB37 /* LengthConvertorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthConvertorView.swift; sourceTree = "<group>"; };
+		35D9B1AB2A31550F00ECBB37 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +145,8 @@
 		35D9B1642A2EBE7B00ECBB37 /* LengthConvertor */ = {
 			isa = PBXGroup;
 			children = (
-				35D9B1672A2EBE9C00ECBB37 /* LengthConvertor.swift */,
-				35D9B1652A2EBE8F00ECBB37 /* LengthConvertorView.swift */,
+				35D9B1A72A3148A900ECBB37 /* LengthConvertor.swift */,
+				35D9B1A92A3148B100ECBB37 /* LengthConvertorView.swift */,
 			);
 			path = LengthConvertor;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				35D9B1692A2EBEA600ECBB37 /* TipsCalculatorView.swift */,
+				35D9B1AB2A31550F00ECBB37 /* Extension.swift */,
 			);
 			path = TipsCalculatorView;
 			sourceTree = "<group>";
@@ -297,12 +300,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				35D9B16A2A2EBEA600ECBB37 /* TipsCalculatorView.swift in Sources */,
-				35D9B1682A2EBE9C00ECBB37 /* LengthConvertor.swift in Sources */,
 				35D9B13B2A2EBC4C00ECBB37 /* ContentView.swift in Sources */,
 				35D9B16C2A2EBEAC00ECBB37 /* TempertureConvertor.swift in Sources */,
+				35D9B1AA2A3148B100ECBB37 /* LengthConvertorView.swift in Sources */,
 				35D9B16E2A2EBEB100ECBB37 /* TempConverterView.swift in Sources */,
+				35D9B1A82A3148A900ECBB37 /* LengthConvertor.swift in Sources */,
 				35D9B1392A2EBC4C00ECBB37 /* SwiftUI100DaysProject1App.swift in Sources */,
-				35D9B1662A2EBE8F00ECBB37 /* LengthConvertorView.swift in Sources */,
+				35D9B1AC2A31550F00ECBB37 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,8 +44,8 @@ struct TipsCalculatorView: View {
                 
                 Section {
                     Text(totalPerPerson, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .zeroPercentageRemind(with: tipPercentage)
                 }
-                
             }
             .navigationTitle("We Split")
             .navigationBarTitleDisplayMode(.inline)
@@ -57,7 +57,6 @@ struct TipsCalculatorView: View {
                 })
             }
         }
-        
     }
 }
 
