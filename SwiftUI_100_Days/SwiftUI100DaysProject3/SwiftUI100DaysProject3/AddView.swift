@@ -16,7 +16,7 @@ struct AddView: View {
     @Environment(\.dismiss) var dismiss
 
     let types = ["Business", "Personal"]
-
+    let currency = ["",""]
     var body: some View {
         NavigationView {
             Form {
@@ -29,6 +29,8 @@ struct AddView: View {
                 }
                 TextField("Amount", value: $amount, format: .currency(code: "USD"))
                     .keyboardType(.decimalPad)
+                }
+                
             }
             .toolbar {
                 Button("Save") {
@@ -39,7 +41,6 @@ struct AddView: View {
             }
             .navigationTitle("Add New Expense")
         }
-    }
 }
 
 struct AddView_Previews: PreviewProvider {
