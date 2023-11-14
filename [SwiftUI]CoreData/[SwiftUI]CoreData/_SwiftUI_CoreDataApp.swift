@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct _SwiftUI_CoreDataApp: App {
+
+    let coredataManager = CoreDataManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, coredataManager.container.viewContext)
         }
+        
     }
 }

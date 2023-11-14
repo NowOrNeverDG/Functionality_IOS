@@ -10,8 +10,14 @@ import SwiftData
 
 struct ContentView: View {
     
+    /// 3. Create a environment property
+    /*
+     We are going to specify the pathe of the context for working with data.
+     taking items from persisitent store and putting it into memory.
+    */
     @Environment(\.modelContext) private var context
     
+    /// 4. add object and query to get the data
     @Query private var items: [DataItem]
     
     var body: some View {
@@ -23,22 +29,24 @@ struct ContentView: View {
             
             List {
                 ForEach(items) { item in
-                    Text(item.name)
-                    Spacer()
-                    Button(action: {
-                        updateItem()
-                    }, label: {
-                        Image(systemName: "arrow.triangle.2.circlepath")
-                    })
+                    HStack {
+                        Text(item.name)
+                        Spacer()
+                        Button {
+                            updateItem(item)
+                        } label: {
+                            Image(systemName: "arrow.3.trianglepath")
+                        }
+                    }
                 }
-                .onDelete(perform: { indexSet in
-                    for index in indexSet {
+                .onDelete{ indexes in
+                    for index in indexes {
                         deleteItem(items[index])
                     }
-                })
+                    
+                }
             }
         }
-        .padding()
     }
     
     func addItem() {

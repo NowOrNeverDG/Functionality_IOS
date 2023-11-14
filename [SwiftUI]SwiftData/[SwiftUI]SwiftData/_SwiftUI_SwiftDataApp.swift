@@ -14,6 +14,7 @@ struct _SwiftUI_SwiftDataApp: App {
         WindowGroup {
             ContentView()
         }
+        /// 2. Add modelContrainer in "_SwiftUI_SwiftDataApp"
         .modelContainer(for: DataItem.self)
     }
 }

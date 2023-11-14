@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35574A262B034B27003B85B7 /* Wizard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35574A242B034B27003B85B7 /* Wizard.xcdatamodeld */; };
+		35574A282B034EB4003B85B7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35574A272B034EB4003B85B7 /* CoreDataManager.swift */; };
 		35F3BAA72AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3BAA62AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift */; };
 		35F3BAA92AFC7E92003119F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3BAA82AFC7E92003119F1 /* ContentView.swift */; };
 		35F3BAAB2AFC7E94003119F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F3BAAA2AFC7E94003119F1 /* Assets.xcassets */; };
 		35F3BAAE2AFC7E94003119F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F3BAAD2AFC7E94003119F1 /* Preview Assets.xcassets */; };
-		35F3BAB62AFC8074003119F1 /* Grocery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35F3BAB42AFC8074003119F1 /* Grocery.xcdatamodeld */; };
-		35F3BAB82AFC811B003119F1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3BAB72AFC811B003119F1 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35574A252B034B27003B85B7 /* Wizard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wizard.xcdatamodel; sourceTree = "<group>"; };
+		35574A272B034EB4003B85B7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		35F3BAA32AFC7E92003119F1 /* [SwiftUI]CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[SwiftUI]CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F3BAA62AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _SwiftUI_CoreDataApp.swift; sourceTree = "<group>"; };
 		35F3BAA82AFC7E92003119F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35F3BAAA2AFC7E94003119F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35F3BAAD2AFC7E94003119F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		35F3BAB52AFC8074003119F1 /* Grocery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Grocery.xcdatamodel; sourceTree = "<group>"; };
-		35F3BAB72AFC811B003119F1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			children = (
 				35F3BAA62AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift */,
 				35F3BAA82AFC7E92003119F1 /* ContentView.swift */,
-				35F3BAB72AFC811B003119F1 /* CoreDataManager.swift */,
-				35F3BAB42AFC8074003119F1 /* Grocery.xcdatamodeld */,
+				35574A272B034EB4003B85B7 /* CoreDataManager.swift */,
+				35574A242B034B27003B85B7 /* Wizard.xcdatamodeld */,
 				35F3BAAA2AFC7E94003119F1 /* Assets.xcassets */,
 				35F3BAAC2AFC7E94003119F1 /* Preview Content */,
 			);
@@ -143,9 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35F3BAB62AFC8074003119F1 /* Grocery.xcdatamodeld in Sources */,
+				35574A262B034B27003B85B7 /* Wizard.xcdatamodeld in Sources */,
 				35F3BAA92AFC7E92003119F1 /* ContentView.swift in Sources */,
-				35F3BAB82AFC811B003119F1 /* CoreDataManager.swift in Sources */,
+				35574A282B034EB4003B85B7 /* CoreDataManager.swift in Sources */,
 				35F3BAA72AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,13 +354,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		35F3BAB42AFC8074003119F1 /* Grocery.xcdatamodeld */ = {
+		35574A242B034B27003B85B7 /* Wizard.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				35F3BAB52AFC8074003119F1 /* Grocery.xcdatamodel */,
+				35574A252B034B27003B85B7 /* Wizard.xcdatamodel */,
 			);
-			currentVersion = 35F3BAB52AFC8074003119F1 /* Grocery.xcdatamodel */;
-			path = Grocery.xcdatamodeld;
+			currentVersion = 35574A252B034B27003B85B7 /* Wizard.xcdatamodel */;
+			path = Wizard.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
