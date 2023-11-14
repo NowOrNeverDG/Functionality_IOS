@@ -6,10 +6,29 @@
 //
 
 import SwiftUI
+import Charts
 
 struct LineMarkView: View {
+    let books = Book.BooksExample
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Chart(books) {
+            LineMark(x: .value("", $0.title),
+                     y: .value("", $0.inventoryCount))
+
+            ///
+            .symbol(by: .value("", ""))
+            ///
+            .interpolationMethod(.monotone)
+            
+            ///
+            .lineStyle(StrokeStyle(lineWidth: 3))
+            
+            LineMark(x: .value("", $0.title),
+                     y: .value("", $0.inventoryCount % 37))
+
+        }
+        .padding()
+            
     }
 }
 

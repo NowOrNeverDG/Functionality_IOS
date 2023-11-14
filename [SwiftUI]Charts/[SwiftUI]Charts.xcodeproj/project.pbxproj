@@ -7,18 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35445D272AEFF13000B7B699 /* SimplePieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35445D262AEFF13000B7B699 /* SimplePieView.swift */; };
+		35445D292AEFF6BB00B7B699 /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35445D282AEFF6BB00B7B699 /* PieView.swift */; };
+		35445D2C2AF0667900B7B699 /* SimpleAreaMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35445D2B2AF0667900B7B699 /* SimpleAreaMarkView.swift */; };
+		35445D302AF07B2C00B7B699 /* AreaMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35445D2F2AF07B2C00B7B699 /* AreaMarkView.swift */; };
+		35445D332AF1B19200B7B699 /* SimpleLineMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35445D322AF1B19200B7B699 /* SimpleLineMarkView.swift */; };
+		35445D352AF1B1A100B7B699 /* LineMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35445D342AF1B1A100B7B699 /* LineMarkView.swift */; };
 		357331752AE3B9140001EA0B /* _SwiftUI_ChartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357331742AE3B9140001EA0B /* _SwiftUI_ChartsApp.swift */; };
 		357331772AE3B9140001EA0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357331762AE3B9140001EA0B /* ContentView.swift */; };
 		357331792AE3B9180001EA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357331782AE3B9180001EA0B /* Assets.xcassets */; };
 		3573317C2AE3B9180001EA0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3573317B2AE3B9180001EA0B /* Preview Assets.xcassets */; };
+		357331882AE3BEE30001EA0B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357331872AE3BEE30001EA0B /* Book.swift */; };
+		357331972AE6386F0001EA0B /* SimpleBarMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357331962AE6386F0001EA0B /* SimpleBarMarkView.swift */; };
+		357331992AE6412F0001EA0B /* BarMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357331982AE6412F0001EA0B /* BarMarkView.swift */; };
+		3573319B2AE645180001EA0B /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573319A2AE645180001EA0B /* Sales.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35445D262AEFF13000B7B699 /* SimplePieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePieView.swift; sourceTree = "<group>"; };
+		35445D282AEFF6BB00B7B699 /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
+		35445D2B2AF0667900B7B699 /* SimpleAreaMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAreaMarkView.swift; sourceTree = "<group>"; };
+		35445D2F2AF07B2C00B7B699 /* AreaMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaMarkView.swift; sourceTree = "<group>"; };
+		35445D322AF1B19200B7B699 /* SimpleLineMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLineMarkView.swift; sourceTree = "<group>"; };
+		35445D342AF1B1A100B7B699 /* LineMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMarkView.swift; sourceTree = "<group>"; };
 		357331712AE3B9140001EA0B /* [SwiftUI]Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[SwiftUI]Charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		357331742AE3B9140001EA0B /* _SwiftUI_ChartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _SwiftUI_ChartsApp.swift; sourceTree = "<group>"; };
 		357331762AE3B9140001EA0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		357331782AE3B9180001EA0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3573317B2AE3B9180001EA0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		357331872AE3BEE30001EA0B /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		357331962AE6386F0001EA0B /* SimpleBarMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBarMarkView.swift; sourceTree = "<group>"; };
+		357331982AE6412F0001EA0B /* BarMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarMarkView.swift; sourceTree = "<group>"; };
+		3573319A2AE645180001EA0B /* Sales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +52,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35445D232AEFF0A900B7B699 /* PieChartView */ = {
+			isa = PBXGroup;
+			children = (
+				35445D262AEFF13000B7B699 /* SimplePieView.swift */,
+				35445D282AEFF6BB00B7B699 /* PieView.swift */,
+			);
+			path = PieChartView;
+			sourceTree = "<group>";
+		};
+		35445D2A2AF0664C00B7B699 /* AreaChartView */ = {
+			isa = PBXGroup;
+			children = (
+				35445D2B2AF0667900B7B699 /* SimpleAreaMarkView.swift */,
+				35445D2F2AF07B2C00B7B699 /* AreaMarkView.swift */,
+			);
+			path = AreaChartView;
+			sourceTree = "<group>";
+		};
+		35445D312AF1B16500B7B699 /* LineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				35445D322AF1B19200B7B699 /* SimpleLineMarkView.swift */,
+				35445D342AF1B1A100B7B699 /* LineMarkView.swift */,
+			);
+			path = LineChartView;
+			sourceTree = "<group>";
+		};
 		357331682AE3B9140001EA0B = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +100,11 @@
 			children = (
 				357331742AE3B9140001EA0B /* _SwiftUI_ChartsApp.swift */,
 				357331762AE3B9140001EA0B /* ContentView.swift */,
+				357331932AE6371A0001EA0B /* BarChartViews */,
+				35445D232AEFF0A900B7B699 /* PieChartView */,
+				35445D2A2AF0664C00B7B699 /* AreaChartView */,
+				35445D312AF1B16500B7B699 /* LineChartView */,
+				357331822AE3B9300001EA0B /* Model */,
 				357331782AE3B9180001EA0B /* Assets.xcassets */,
 				3573317A2AE3B9180001EA0B /* Preview Content */,
 			);
@@ -65,6 +117,24 @@
 				3573317B2AE3B9180001EA0B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		357331822AE3B9300001EA0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				357331872AE3BEE30001EA0B /* Book.swift */,
+				3573319A2AE645180001EA0B /* Sales.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		357331932AE6371A0001EA0B /* BarChartViews */ = {
+			isa = PBXGroup;
+			children = (
+				357331962AE6386F0001EA0B /* SimpleBarMarkView.swift */,
+				357331982AE6412F0001EA0B /* BarMarkView.swift */,
+			);
+			path = BarChartViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +208,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				357331772AE3B9140001EA0B /* ContentView.swift in Sources */,
+				35445D292AEFF6BB00B7B699 /* PieView.swift in Sources */,
+				357331882AE3BEE30001EA0B /* Book.swift in Sources */,
+				3573319B2AE645180001EA0B /* Sales.swift in Sources */,
+				357331972AE6386F0001EA0B /* SimpleBarMarkView.swift in Sources */,
+				35445D332AF1B19200B7B699 /* SimpleLineMarkView.swift in Sources */,
+				35445D2C2AF0667900B7B699 /* SimpleAreaMarkView.swift in Sources */,
+				35445D302AF07B2C00B7B699 /* AreaMarkView.swift in Sources */,
+				35445D272AEFF13000B7B699 /* SimplePieView.swift in Sources */,
 				357331752AE3B9140001EA0B /* _SwiftUI_ChartsApp.swift in Sources */,
+				357331992AE6412F0001EA0B /* BarMarkView.swift in Sources */,
+				35445D352AF1B1A100B7B699 /* LineMarkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
