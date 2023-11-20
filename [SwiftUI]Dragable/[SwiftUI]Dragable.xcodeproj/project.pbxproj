@@ -11,6 +11,9 @@
 		354837EF2B0819CC00866462 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354837EE2B0819CC00866462 /* ContentView.swift */; };
 		354837F12B0819CF00866462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354837F02B0819CF00866462 /* Assets.xcassets */; };
 		354837F42B0819CF00866462 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354837F32B0819CF00866462 /* Preview Assets.xcassets */; };
+		354837FB2B0819EB00866462 /* KanbanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354837FA2B0819EB00866462 /* KanbanView.swift */; };
+		354837FE2B09ABCD00866462 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 354837FD2B09ABCD00866462 /* Algorithms */; };
+		354838002B09F34600866462 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354837FF2B09F34600866462 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		354837EE2B0819CC00866462 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		354837F02B0819CF00866462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354837F32B0819CF00866462 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		354837FA2B0819EB00866462 /* KanbanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanView.swift; sourceTree = "<group>"; };
+		354837FF2B09F34600866462 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354837FE2B09ABCD00866462 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +59,8 @@
 			children = (
 				354837EC2B0819CC00866462 /* _SwiftUI_DragableApp.swift */,
 				354837EE2B0819CC00866462 /* ContentView.swift */,
+				354837FA2B0819EB00866462 /* KanbanView.swift */,
+				354837FF2B09F34600866462 /* ViewModel.swift */,
 				354837F02B0819CF00866462 /* Assets.xcassets */,
 				354837F22B0819CF00866462 /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "[SwiftUI]Dragable";
+			packageProductDependencies = (
+				354837FD2B09ABCD00866462 /* Algorithms */,
+			);
 			productName = "[SwiftUI]Dragable";
 			productReference = 354837E92B0819CC00866462 /* [SwiftUI]Dragable.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 354837E02B0819CC00866462;
+			packageReferences = (
+				354837FC2B09ABCD00866462 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 354837EA2B0819CC00866462 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354837FB2B0819EB00866462 /* KanbanView.swift in Sources */,
 				354837EF2B0819CC00866462 /* ContentView.swift in Sources */,
+				354838002B09F34600866462 /* ViewModel.swift in Sources */,
 				354837ED2B0819CC00866462 /* _SwiftUI_DragableApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		354837FC2B09ABCD00866462 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		354837FD2B09ABCD00866462 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 354837FC2B09ABCD00866462 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 354837E12B0819CC00866462 /* Project object */;
 }

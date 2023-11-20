@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  [SwiftUI]GraphQL
 //
-//  Created by Ge Ding on 11/16/23.
+//  Created by Ge Ding on 11/20/23.
 //
 
 import SwiftUI
