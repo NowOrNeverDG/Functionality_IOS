@@ -43,7 +43,6 @@ struct ContentView: View {
                     for index in indexes {
                         deleteItem(items[index])
                     }
-                    
                 }
             }
         }
