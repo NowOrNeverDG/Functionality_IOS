@@ -28,7 +28,6 @@ struct LineMarkView: View {
 
         }
         .padding()
-            
     }
 }
 
