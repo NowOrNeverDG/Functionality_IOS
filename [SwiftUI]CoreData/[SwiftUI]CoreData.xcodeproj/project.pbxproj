@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		35574A262B034B27003B85B7 /* Wizard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35574A242B034B27003B85B7 /* Wizard.xcdatamodeld */; };
 		35574A282B034EB4003B85B7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35574A272B034EB4003B85B7 /* CoreDataManager.swift */; };
+		358539102B16F0810092F854 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585390F2B16F0810092F854 /* BasicView.swift */; };
 		35F3BAA72AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3BAA62AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift */; };
 		35F3BAA92AFC7E92003119F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3BAA82AFC7E92003119F1 /* ContentView.swift */; };
 		35F3BAAB2AFC7E94003119F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F3BAAA2AFC7E94003119F1 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		35574A252B034B27003B85B7 /* Wizard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wizard.xcdatamodel; sourceTree = "<group>"; };
 		35574A272B034EB4003B85B7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3585390F2B16F0810092F854 /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 		35F3BAA32AFC7E92003119F1 /* [SwiftUI]CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[SwiftUI]CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F3BAA62AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _SwiftUI_CoreDataApp.swift; sourceTree = "<group>"; };
 		35F3BAA82AFC7E92003119F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3585390D2B16EFED0092F854 /* BasicProject */ = {
+			isa = PBXGroup;
+			children = (
+				35574A272B034EB4003B85B7 /* CoreDataManager.swift */,
+				3585390F2B16F0810092F854 /* BasicView.swift */,
+				35574A242B034B27003B85B7 /* Wizard.xcdatamodeld */,
+			);
+			path = BasicProject;
+			sourceTree = "<group>";
+		};
 		35F3BA9A2AFC7E92003119F1 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +69,7 @@
 			children = (
 				35F3BAA62AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift */,
 				35F3BAA82AFC7E92003119F1 /* ContentView.swift */,
-				35574A272B034EB4003B85B7 /* CoreDataManager.swift */,
-				35574A242B034B27003B85B7 /* Wizard.xcdatamodeld */,
+				3585390D2B16EFED0092F854 /* BasicProject */,
 				35F3BAAA2AFC7E94003119F1 /* Assets.xcassets */,
 				35F3BAAC2AFC7E94003119F1 /* Preview Content */,
 			);
@@ -146,6 +157,7 @@
 				35574A262B034B27003B85B7 /* Wizard.xcdatamodeld in Sources */,
 				35F3BAA92AFC7E92003119F1 /* ContentView.swift in Sources */,
 				35574A282B034EB4003B85B7 /* CoreDataManager.swift in Sources */,
+				358539102B16F0810092F854 /* BasicView.swift in Sources */,
 				35F3BAA72AFC7E92003119F1 /* _SwiftUI_CoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

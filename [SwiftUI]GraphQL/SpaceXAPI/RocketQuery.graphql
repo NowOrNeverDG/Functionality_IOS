@@ -1,9 +1,0 @@
-query RocketQuery {
-  launches {
-    cursor
-    launches {
-      id
-      site
-    }
-  }
-}

@@ -11,13 +11,14 @@
 		3506974E2B11D9570022E978 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3506974D2B11D9570022E978 /* ContentView.swift */; };
 		350697502B11D9590022E978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3506974F2B11D9590022E978 /* Assets.xcassets */; };
 		350697532B11D9590022E978 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350697522B11D9590022E978 /* Preview Assets.xcassets */; };
-		350697872B14F03D0022E978 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 350697842B14F03D0022E978 /* schema.graphqls */; };
-		350697882B14F03D0022E978 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 350697852B14F03D0022E978 /* schema.json */; };
-		350697892B14F03D0022E978 /* RocketQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 350697862B14F03D0022E978 /* RocketQuery.graphql */; };
 		3506978C2B14F4EF0022E978 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 3506978B2B14F4EF0022E978 /* Apollo */; };
 		3506978E2B14F4EF0022E978 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 3506978D2B14F4EF0022E978 /* ApolloAPI */; };
 		350697902B14F4EF0022E978 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3506978F2B14F4EF0022E978 /* ApolloSQLite */; };
 		350697922B14F4EF0022E978 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 350697912B14F4EF0022E978 /* ApolloTestSupport */; };
+		357940592B16688200C0DCD7 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 357940582B16688200C0DCD7 /* SDWebImageSwiftUI */; };
+		357940602B166B9A00C0DCD7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3579405F2B166B9A00C0DCD7 /* ViewModel.swift */; };
+		3579406A2B166E0100C0DCD7 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 357940692B166E0100C0DCD7 /* schema.graphqls */; };
+		3579406E2B166E9900C0DCD7 /* LaunchList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 3579406D2B166E9900C0DCD7 /* LaunchList.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +27,9 @@
 		3506974D2B11D9570022E978 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3506974F2B11D9590022E978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		350697522B11D9590022E978 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		350697842B14F03D0022E978 /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
-		350697852B14F03D0022E978 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
-		350697862B14F03D0022E978 /* RocketQuery.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RocketQuery.graphql; sourceTree = "<group>"; };
+		3579405F2B166B9A00C0DCD7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		357940692B166E0100C0DCD7 /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		3579406D2B166E9900C0DCD7 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357940592B16688200C0DCD7 /* SDWebImageSwiftUI in Frameworks */,
 				3506978E2B14F4EF0022E978 /* ApolloAPI in Frameworks */,
 				350697922B14F4EF0022E978 /* ApolloTestSupport in Frameworks */,
 				3506978C2B14F4EF0022E978 /* Apollo in Frameworks */,
@@ -65,9 +67,10 @@
 		3506974A2B11D9570022E978 /* [SwiftUI]GraphQL */ = {
 			isa = PBXGroup;
 			children = (
-				350697832B14F03D0022E978 /* SpaceXAPI */,
+				357940682B166E0100C0DCD7 /* SpaceX */,
 				3506974B2B11D9570022E978 /* _SwiftUI_GraphQLApp.swift */,
 				3506974D2B11D9570022E978 /* ContentView.swift */,
+				3579405F2B166B9A00C0DCD7 /* ViewModel.swift */,
 				3506974F2B11D9590022E978 /* Assets.xcassets */,
 				350697512B11D9590022E978 /* Preview Content */,
 			);
@@ -82,14 +85,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		350697832B14F03D0022E978 /* SpaceXAPI */ = {
+		357940682B166E0100C0DCD7 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
-				350697842B14F03D0022E978 /* schema.graphqls */,
-				350697852B14F03D0022E978 /* schema.json */,
-				350697862B14F03D0022E978 /* RocketQuery.graphql */,
+				357940692B166E0100C0DCD7 /* schema.graphqls */,
+				3579406D2B166E9900C0DCD7 /* LaunchList.graphql */,
 			);
-			path = SpaceXAPI;
+			path = SpaceX;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -113,6 +115,7 @@
 				3506978D2B14F4EF0022E978 /* ApolloAPI */,
 				3506978F2B14F4EF0022E978 /* ApolloSQLite */,
 				350697912B14F4EF0022E978 /* ApolloTestSupport */,
+				357940582B16688200C0DCD7 /* SDWebImageSwiftUI */,
 			);
 			productName = "[SwiftUI]GraphQL";
 			productReference = 350697482B11D9570022E978 /* [SwiftUI]GraphQL.app */;
@@ -144,6 +147,7 @@
 			mainGroup = 3506973F2B11D9560022E978;
 			packageReferences = (
 				3506978A2B14F4EF0022E978 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				357940572B16688200C0DCD7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 350697492B11D9570022E978 /* Products */;
 			projectDirPath = "";
@@ -159,10 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				350697882B14F03D0022E978 /* schema.json in Resources */,
-				350697892B14F03D0022E978 /* RocketQuery.graphql in Resources */,
 				350697532B11D9590022E978 /* Preview Assets.xcassets in Resources */,
-				350697872B14F03D0022E978 /* schema.graphqls in Resources */,
+				3579406E2B166E9900C0DCD7 /* LaunchList.graphql in Resources */,
+				3579406A2B166E0100C0DCD7 /* schema.graphqls in Resources */,
 				350697502B11D9590022E978 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3506974E2B11D9570022E978 /* ContentView.swift in Sources */,
+				357940602B166B9A00C0DCD7 /* ViewModel.swift in Sources */,
 				3506974C2B11D9570022E978 /* _SwiftUI_GraphQLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +395,14 @@
 				minimumVersion = 1.7.1;
 			};
 		};
+		357940572B16688200C0DCD7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -413,6 +425,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3506978A2B14F4EF0022E978 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloTestSupport;
+		};
+		357940582B16688200C0DCD7 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 357940572B16688200C0DCD7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

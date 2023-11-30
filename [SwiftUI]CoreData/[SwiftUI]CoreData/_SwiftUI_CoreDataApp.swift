@@ -14,7 +14,7 @@ struct _SwiftUI_CoreDataApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, coredataManager.container.viewContext)
+                .environment(\.managedObjectContext, coredataManager.persistantContainer.viewContext)
         }
         
     }
