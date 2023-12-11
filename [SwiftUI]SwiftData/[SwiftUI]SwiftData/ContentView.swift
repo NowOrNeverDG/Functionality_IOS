@@ -39,7 +39,7 @@ struct ContentView: View {
                         if searchText == "" {
                             filterItems = items
                         } else {
-                            filterItems = items.filter{ $0.name.contains(searchText) }
+                            filterItems = items.filter{ $0.name.contains(searchText)}
                         }
                     }
                     .padding()
@@ -49,12 +49,6 @@ struct ContentView: View {
                     ForEach(filterItems) { item in
                         HStack {
                             Text(item.name)
-                            Spacer()
-                            Button {
-                                updateItem(item)
-                            } label: {
-                                Image(systemName: "arrow.3.trianglepath")
-                            }
                         }
                     }
                     .onDelete{ indexes in
@@ -94,6 +88,7 @@ struct ContentView: View {
             Button("Submit") {
                 isPresented.toggle()
                 addItem(nameText)
+                filterItems = items
             }
         }
 
@@ -106,11 +101,6 @@ struct ContentView: View {
     
     func deleteItem(_ item: DataItem) {
         context.delete(item)
-    }
-    
-    func updateItem(_ item: DataItem) {
-        item.name = "Updated Test Item"
-        try? context.save()
     }
 }
 
