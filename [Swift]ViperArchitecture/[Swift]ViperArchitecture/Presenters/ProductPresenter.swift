@@ -7,24 +7,22 @@
 
 import Foundation
 
-class ProductPresenter: ViewToPresenterProtocol {
-    var view: PresenterToViewProtocol?
-    var interactor: PresenterToInteractorProtocol?
-    var router: PresenterToRouterProtocol?
+class ProductPresenter: ViewToPresentroProtocol {
+    var view: PresentorToViewProtocol?
+    var interactor: PresentorToInteractorProtocol?
+    var router: PresentorToRouteProtocol?
     
-    func startFetchingProducts() {
-        interactor?.fetchProducts()
+    func getProductsList() {
+        interactor?.fetchProductsList()
     }
 }
 
-extension ProductPresenter: InteractorToPresenterProtocol {
-    func fetchProductsSuccess(_ products: [Product]) {
-        view?.showProducts(products)
+extension ProductPresenter: InteractorToPresentorProtocol {
+    func productsListFetched(_ products: [Product]) {
+        view?.showProductsList(products)
     }
     
-    func fetchProductsFailure(_ error: Error) {
+    func productsListFetchedFailed() {
         view?.showError()
     }
-    
-    
 }

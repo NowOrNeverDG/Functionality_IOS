@@ -1,40 +1,40 @@
 //
-//  Protocol.swift
+//  Protocols.swift
 //  [Swift]ViperArchitecture
 //
-//  Created by Ge Ding on 12/5/23.
+//  Created by Ge Ding on 12/14/23.
 //
 
+import Foundation
 import UIKit
 
-protocol InteractorToPresenterProtocol {
-    func fetchProductsSuccess(_ products: [Product])
-    func fetchProductsFailure(_ error: Error)
-}
-
-protocol PresenterToViewProtocol {
-    func showProducts(_ products: [Product])
+protocol PresentorToViewProtocol : AnyObject {
+    func showProductsList(_ products: [Product])
     func showError()
-    func showLoading()
 }
 
-
-protocol ViewToPresenterProtocol {
-    var view: PresenterToViewProtocol? {get set}
-    var interactor: PresenterToInteractorProtocol? {get set}
-    var router: PresenterToRouterProtocol? {get set}
+protocol InteractorToPresentorProtocol  : AnyObject {
     
-    func startFetchingProducts()
+    func productsListFetched(_ products: [Product])
+    func productsListFetchedFailed()
     
 }
 
-protocol PresenterToInteractorProtocol {
-    var presenter: InteractorToPresenterProtocol? { get set }
+protocol PresentorToInteractorProtocol : AnyObject {
+    var presenter: InteractorToPresentorProtocol? {get set}
     
-    func fetchProducts()
+    func fetchProductsList()
+}
+protocol ViewToPresentroProtocol : AnyObject {
+    
+    var view: PresentorToViewProtocol? {get set}
+    var interactor: PresentorToInteractorProtocol? {get set}
+    var router: PresentorToRouteProtocol? {get set}
+    func getProductsList()
 }
 
-protocol PresenterToRouterProtocol {
-    static func createModule() -> ProductsViewController
+
+protocol PresentorToRouteProtocol : AnyObject {
+    static func createModule(forViewController view: UIViewController )
     
 }
