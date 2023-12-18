@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-
+import SwiftData
 @main
 struct _SwiftUI_PhotoGalleryApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: ImageData.self)
     }
 }

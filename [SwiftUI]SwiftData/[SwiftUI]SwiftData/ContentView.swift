@@ -24,7 +24,6 @@ struct ContentView: View {
     @Query private var items: [DataItem]
     @State private var filterItems: [DataItem] = []
     
-    
     @State private var searchText = ""
     
     var body: some View {
